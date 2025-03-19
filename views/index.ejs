@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Messages</h1>
+    <a href="/new">New Message</a>
+    <ul>
+        <% for (const message of messages) { %>
+                <li>
+                    <p><%= message.user %></p>
+                    <p><%= message.text.slice(0, 5) %>...</p>
+                    <p><%= message.added %></p>
+                    <a href=<%="/" + message.id%>>View Full Message</a>
+                </li>
+        <% } %>
+    </ul>
+</body>
+
+</html>
