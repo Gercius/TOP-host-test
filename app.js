@@ -16,7 +16,7 @@ app.use(express.static(assetsPath));
 app.use(indexRouter);
 app.use(messageRouter);
 
-const PORT = 3000;
+const PORT = 8000;
 app.listen(PORT, () => {
     console.log(`Listening on port http://localhost:${PORT}`);
 });
