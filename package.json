@@ -5,6 +5,9 @@
     "scripts": {
         "start": "node --watch app.js"
     },
+    "engines": {
+        "node": "20.19.0"
+    }
     "keywords": [],
     "author": "",
     "license": "ISC",
